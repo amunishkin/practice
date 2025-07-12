@@ -1,1 +1,3 @@
 # practice
+- C++
+- Python
