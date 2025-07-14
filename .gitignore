@@ -1,0 +1,15 @@
+*.exe
+
+
+# Java files
+*.class
+
+# Scala
+*/.bsp
+*./scala-build
+
+# Python files
+
+# C, C++ files
+
+# Rust files
