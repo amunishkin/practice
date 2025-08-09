@@ -1,4 +1,7 @@
 *.exe
+*/build/
+*/.settings/
+*/.vscode/
 
 
 # Java files
