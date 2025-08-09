@@ -1,3 +1,4 @@
+#include <precomp.h>
 #include <glfw_monitor.h>
 #include <GLFW/glfw3.h>
 
