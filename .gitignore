@@ -1,16 +1,24 @@
 *.exe
 .gitignore
 build/
-.settings/
+
+# VSCode files
 .vscode/
+
+# Eclipse files
+.settings/
+.metadata/
+bin/
+.classpath
+.project
 
 
 # Java files
 *.class
 
 # Scala
-.bsp
-scala-build
+.bsp/
+scala-build/
 
 # Python files
 
