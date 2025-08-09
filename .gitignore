@@ -1,18 +1,22 @@
 *.exe
-*/build/
-*/.settings/
-*/.vscode/
+.gitignore
+build/
+.settings/
+.vscode/
 
 
 # Java files
 *.class
 
 # Scala
-*/.bsp
-*./scala-build
+.bsp
+scala-build
 
 # Python files
 
 # C, C++ files
+*.o
+*.a
 
 # Rust files
+
