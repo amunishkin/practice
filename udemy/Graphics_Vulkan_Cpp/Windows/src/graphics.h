@@ -13,13 +13,18 @@ class Graphics final {
  private:
   void InitializeVulkan();
   void CreateInstance();
+  std::vector<gsl::czstring> GetRequiredInstanceExtensions();
 
   static gsl::span<gsl::czstring> GetSuggestedInstanceExtensions();
   static std::vector<VkExtensionProperties> GetSupportedInstanceExtensions();
   static bool AreAllExtensionsSupported(gsl::span<gsl::czstring> extensions);
 
+  static std::vector<VkLayerProperties> GetSupportedValidationLayers();
+  static bool AreAllLayersSupported(gsl::span<gsl::czstring> extensions);
+
   VkInstance instance_ = nullptr;
   gsl::not_null<Window*> window_;
+  bool validation_enabled_ = false;
 };
 
 }  // namespace veng

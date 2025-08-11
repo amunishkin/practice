@@ -10,3 +10,4 @@
 #include <vector>
 #include <utilities.h>
 #include <functional>
+#include <spdlog/spdlog.h>

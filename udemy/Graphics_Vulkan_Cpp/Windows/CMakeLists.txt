@@ -15,6 +15,15 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(glm)
 
 FetchContent_Declare(
+    spdlog
+    GIT_REPOSITORY "https://github.com/gabime/spdlog.git"
+    GIT_TAG "v1.12.0"
+    GIT_SHALLOW TRUE
+)
+
+FetchContent_MakeAvailable(spdlog)
+
+FetchContent_Declare(
     glfw
     GIT_REPOSITORY "https://github.com/glfw/glfw.git"
     GIT_TAG "3.3.8"
@@ -46,6 +55,7 @@ target_link_libraries(Windows PRIVATE Vulkan::Vulkan)
 target_link_libraries(Windows PRIVATE glm)
 target_link_libraries(Windows PRIVATE glfw)
 target_link_libraries(Windows PRIVATE Microsoft.GSL::GSL)
+target_link_libraries(Windows PRIVATE spdlog)
 
 target_include_directories(Windows PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
 
