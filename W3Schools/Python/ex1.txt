@@ -1,0 +1,6 @@
+hi
+23
+['test', 'hi2']
+{'key': 'value'}
+key : value
+name : ['Bob', 'John', {'name2': 'Johnny'}]
