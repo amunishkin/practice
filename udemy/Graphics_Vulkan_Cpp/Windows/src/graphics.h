@@ -13,6 +13,7 @@ class Graphics final {
  private:
   void InitializeVulkan();
   void CreateInstance();
+  void SetupDebugMessenger();
   std::vector<gsl::czstring> GetRequiredInstanceExtensions();
 
   static gsl::span<gsl::czstring> GetSuggestedInstanceExtensions();
@@ -23,6 +24,7 @@ class Graphics final {
   static bool AreAllLayersSupported(gsl::span<gsl::czstring> extensions);
 
   VkInstance instance_ = nullptr;
+  VkDebugUtilsMessengerEXT debug_messenger_;
   gsl::not_null<Window*> window_;
   bool validation_enabled_ = false;
 };
