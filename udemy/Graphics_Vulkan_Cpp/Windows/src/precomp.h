@@ -11,3 +11,4 @@
 #include <utilities.h>
 #include <functional>
 #include <spdlog/spdlog.h>
+#include <optional>
